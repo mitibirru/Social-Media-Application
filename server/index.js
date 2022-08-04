@@ -12,8 +12,8 @@ app.use(cors());
 
 app.use("/posts", postRoutes);
 
-const CONNECTION_URL =
-  "mongodb+srv://mitibirru:mitibirru@cluster0.i01scvw.mongodb.net/socialmedia?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb://localhost:27017/socialmedia";
+
 const PORT = process.env.PORT || 5000;
 
 mongoose
